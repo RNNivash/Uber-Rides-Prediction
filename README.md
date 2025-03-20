@@ -65,8 +65,8 @@ This project is MIT Licensed.
 
 ## You can reach out to me via:
 
-📧 Email: hello.nivashinsights@gmail.com
-🔗 LinkedIn: Nivash R N
-🌐 Portfolio: rnnivash.github.io/My_Port
+- LinkedIn: [Your Profile](https://www.linkedin.com/in/nivash-r-n/)
+- Portfolio: [Your Website](https://rnnivash.github.io/My_Port/)
+- Email: [hello.nivashinsights@gmail.com](mailto:hello.nivashinsights@gmail.com)
 
 Let me know how I can assist you! 🚀
