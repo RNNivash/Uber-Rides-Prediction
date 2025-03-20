@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Uber Rides Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="container-heading"><span class="heading_font">Uber Rides Predictor</span></h2>
+        <p class="description">A Machine Learning Web App, Built with Flask</p>
+    </div>
+
+    <div class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <div class="input-group">
+                <input class="form-input" type="number" name="Priceperweek" placeholder="Price per week (e.g., 25)" required>
+            </div>
+            <div class="input-group">
+                <input class="form-input" type="number" name="Population" placeholder="Population (e.g., 1800000)" required>
+            </div>
+            <div class="input-group">
+                <input class="form-input" type="number" name="Monthlyincome" placeholder="Monthly income (e.g., 20000)" required>
+            </div>
+            <div class="input-group">
+                <input class="form-input" type="number" name="Averageparkingpermonth" placeholder="Avg parking per month (e.g., 90)" required>
+            </div>
+            <button type="submit" class="my-cta-button">Predict</button>
+        </form>
+        <p class="prediction-text">{{ predict_text }}</p>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-description">&copy; 2025 Uber Rides Prediction | Nivash ❤️</p>
+    </footer>
+</body>
+</html>
